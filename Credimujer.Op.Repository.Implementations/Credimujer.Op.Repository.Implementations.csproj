@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Autofac" Version="6.3.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.11" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.11" />
+		<PackageReference Include="Z.EntityFramework.Extensions.EFCore" Version="5.2.13" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Credimujer.Op.Common\Credimujer.Op.Common.csproj" />
+	  <ProjectReference Include="..\Credimujer.Op.Domail.Models\Credimujer.Op.Domail.Models.csproj" />
+	  <ProjectReference Include="..\Credimujer.Op.Dto\Credimujer.Op.Dto.csproj" />
+	  <ProjectReference Include="..\Credimujer.Op.Model\Credimujer.Op.Model.csproj" />
+	  <ProjectReference Include="..\Credimujer.Op.Repository.Interfaces\Credimujer.Op.Repository.Interfaces.csproj" />
+	</ItemGroup>
+</Project>

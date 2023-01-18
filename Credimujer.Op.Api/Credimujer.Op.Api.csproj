@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Autofac" Version="6.3.0" />
+	  <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+	  <PackageReference Include="FluentValidation.AspNetCore" Version="11.1.2" />
+	  <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.11" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />
+	  <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="5.0.0" />
+	  <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="5.0.0" />
+	  <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Credimujer.Op.Application.Implementations\Credimujer.Op.Application.Implementations.csproj" />
+    <ProjectReference Include="..\Credimujer.Op.Application.Interfaces\Credimujer.Op.Application.Interfaces.csproj" />
+    <ProjectReference Include="..\Credimujer.Op.Extensions\Credimujer.Op.Extensions.csproj" />
+    <ProjectReference Include="..\Credimujer.Op.Repository.Implementations\Credimujer.Op.Repository.Implementations.csproj" />
+    <ProjectReference Include="..\Credimujer.Op.Service.Implementations\Credimujer.Op.Service.Implementations.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="PlantillaExcel\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="PlantillaExcel\reporteanillogrupal.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="PlantillaExcel\reportecreditoparalelo.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="PlantillaExcel\reportectaexterna.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="PlantillaExcel\reporteinformacionsocias.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="PlantillaExcel\reporteparaleloanillogrupal.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="PlantillaExcel\reporteparalelo_promocional.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="PlantillaExcel\reporteResumenDeRegistrosIngresados.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" properties_4launchsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>

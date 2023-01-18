@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.3.0" />
+	  <PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="5.0.0" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Credimujer.Op.Common\Credimujer.Op.Common.csproj" />
+    <ProjectReference Include="..\Credimujer.Op.Model\Credimujer.Op.Model.csproj" />
+    <ProjectReference Include="..\Credimujer.Op.Service.Interfaces\Credimujer.Op.Service.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Credimujer.Op.Common\Credimujer.Op.Common.csproj" />
+    <ProjectReference Include="..\Credimujer.Op.Model\Credimujer.Op.Model.csproj" />
+  </ItemGroup>
+
+</Project>

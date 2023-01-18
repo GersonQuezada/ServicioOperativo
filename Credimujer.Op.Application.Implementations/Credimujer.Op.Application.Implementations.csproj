@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="5.8.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Credimujer.Op.Application.Interfaces\Credimujer.Op.Application.Interfaces.csproj" />
+    <ProjectReference Include="..\Credimujer.Op.Model\Credimujer.Op.Model.csproj" />
+    <ProjectReference Include="..\Credimujer.Op.Repository.Implementations\Credimujer.Op.Repository.Implementations.csproj" />
+    <ProjectReference Include="..\Credimujer.Op.Service.Interfaces\Credimujer.Op.Service.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,75 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/index.html",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9000
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/operativo/security/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8001
+        }
+      ],
+      "RouteIsCaseSensitive": false,
+      "SwaggerKey": "CrediMujerSeguridad"
+
+    }
+    ,
+    {
+      "UpstreamPathTemplate": "/operativo/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9002
+        }
+      ],
+      "RouteIsCaseSensitive": false,
+      "SwaggerKey": "PersonalOperativo"
+
+    }
+
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "CrediMujerSeguridad",
+      "Config": [
+        {
+          "Name": "Seguridad API",
+          "Version": "v1",
+          "Url": "http://localhost:8001/swagger/v1/swagger.json"
+        }
+      ]
+    }
+    ,
+    {
+      "Key": "PersonalOperativo",
+      "Config": [
+        {
+          "Name": "Personal Operativo API",
+          "Version": "v1",
+          "Url": "http://localhost:9002/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "RequestIdKey": "OcRequestId",
+    "AdministrationPath": "/administration"
+  }
+}
